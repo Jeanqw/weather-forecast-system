@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first-content">
+            <div class="sidebar">
+                <div class="sidebar-container-first">
+                    <img class="guarda-chuva_icon" src="img/guarda-chuva.svg">
+                </div>
+                <div class="sidebar-container"><!--space--></div>
+                <a href="index.html">
+                    <div class="sidebar-container">
+                        <img class="nuvem-sidebar_icon" src="img/nuvem-sidebar.svg">
+                        <span>Clima</span>
+                    </div>
+                </a>
+                <div class="sidebar-container" id="active">
+                    <img class="cidades-sidebar_icon" src="img/cidades-sidebar.svg">
+                    <span>Cidades</span>
+                </div>
+                <a href="mapa.html">
+                    <div class="sidebar-container">
+                        <img class="map_icon" src="img/map.svg">
+                        <span>Mapa</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="second-content-cidadesTela">
+            <div class="header-container">
+                <div class="mobile-menu-icon">
+                    <button><img src="img/menu-mobile.svg" alt=""></button>
+                </div>
+                <h1 class="title-cidades">Principais cidades do mundo</h1>
+            </div>
+
+            <div class="dropdown-hide">
+                <div class="mobile-menu">
+
+                    <a href="index.html">
+                        <div class="sidebar-container">
+                            <span>Clima</span>
+                        </div>
+                    </a>
+
+                    <div class="sidebar-container" id="active">
+                        <span>Cidades</span>
+                    </div>
+
+                    <a href="mapa.html">
+                        <div class="sidebar-container">
+                            <span>Mapa</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="principaisCidades">
+                <!-- aqui esta rolando um script para printar as cidades -->
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

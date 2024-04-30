@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    width: 100vw;
+    height: 100%;
+    background-color: #0B131E;
+}
+.main, .main-mapa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.first-content{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second-content{
+    width: 60%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.third-content, .third-content-mapa{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* =====================================================
+FIRST CONTENT
+*/
+.sidebar{
+    width: 80%;
+    height: 90%;
+    background-color: #202B3B;
+    border-radius: 10px;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 15%; */
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.sidebar-container-first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    color: white;
+}
+.guarda-chuva_icon, .map_icon, .nuvem-sidebar_icon, .cidades-sidebar_icon{
+    width: 40%;
+}
+.guarda-chuva_icon{
+    transform: rotate(30deg);
+}
+#active{
+    background-color: #495a74;
+}
+
+/*menu mobile*/
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu-icon button{
+    background-color: #445570;
+    border-radius: 5px;
+    border: none;
+}
+.mobile-menu, .mobile-menu-mapa{
+    display: none;
+}
+
+
+/* =====================================================
+SECOND CONTENT
+*/
+.searchBar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+}
+.searchBar-container input{
+    width: 90%;
+    height: 35%;
+    background-color: #202B3B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-indent: 15px;
+
+}
+
+
+.clima-print{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.column-clima{
+    width: 40%;
+    height: 100%;
+    color: white;
+    margin-left: 8%;
+}
+.cidade{
+    width: 100%;
+}
+.clima-icon{
+    width: 80%;
+    height: 100%;
+    display: flex; 
+    justify-content: space-around;
+    
+}
+.clima-icon img{
+    /* width: 50%;*/
+    height: 100%; 
+}
+
+.clima-horarios-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.clima-horarios{
+    width: 90%;
+    height: 85%;
+    background-color: #202B3B;
+    border-radius: 10px;
+    color: rgb(161, 147, 147);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.title-clima-horarios{
+    height: 10%;
+    text-indent: 5%;
+}
+.main-horarios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.parte-horarios{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.parte-horarios h3{
+    color: white;
+}
+.parte-horarios img{
+    width: 40%;
+}
+
+
+.condicoes-ar-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.condicoes-ar{
+    width: 90%;
+    height: 90%;
+    background-color: #202B3B;
+    color: rgb(161, 147, 147);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.condicoes-ar p{
+    height: 10%;
+    text-indent: 5%;
+    margin-top: 1%;
+}
+.info-ar{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.col div{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.col div img{
+    width: 12%;
+}
+.info-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info-text p{
+    width: 100%;
+    height: 100%;
+    text-indent: 0;
+}
+.info-text h3{
+    width: 100%;
+    height: 100%;
+}
+
+/* ===================== tela de cidades */
+.second-content-cidadesTela{
+    width: 90%;
+    height: 100%; 
+    margin-left: 3%;
+}
+.title-cidades{
+    color:#495a74;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+}
+
+
+.principaisCidades{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+a{
+    width: 80%;
+    height: 15%;
+}
+.city{
+    width: 100%;
+    height: 100%;
+    /* background-color: #202B3B; */
+    border: 1px solid #202B3B;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(161, 147, 147);
+}
+.city:hover{
+    background-color: #202B3B; 
+}
+.city h3{
+    width: 30%;
+}
+
+.city div{
+    width: 30%;
+    display: flex;
+    gap: 8%;
+}
+.city div img{
+    width: 10%;
+}
+
+
+/* ================tela de mapas */
+.header-container-mapa{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+svg{
+    width: 100%;
+    height: 50%;
+}
+path{
+    fill:#495a74;
+}
+path:hover{
+    fill:#202B3B;
+}
+.path_click{
+    fill:#202B3B;
+}
+
+.nameCountry {
+    pointer-events: none;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    background: white;
+    padding: 10px 15px;
+    z-index: 5;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #21669e;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    display: none;
+  }
+  .nameCountry.active {
+    display: block;
+  }
+  .nameCountry:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+  }
+
+
+
+
+/* ============================================
+THIRD CONTAINER */
+
+.outros-dados, .outros-dados-mapa{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: #202B3B;
+    border-radius: 10px;
+    color: rgb(161, 147, 147);
+}
+/* outros-dados-mapa é apenas o mesmo container porém da tela de mapa */
+.outros-dados-mapa{
+    justify-content: space-around;
+}
+.title-outros-dados{
+    height: 10%;
+    margin-top: 7%; 
+}
+
+.container-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    border-top: 1px solid #39475c;
+    
+}
+.container-info div{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    height: 100%;
+}
+.container-info div img{
+    width: 22%;
+}
+.container-info-hide{
+    display: none;
+}
+.row-info{
+    color: white;
+    width: 30%;
+}
+#latitudeImg{
+    transform: rotate(90deg);
+}
+
+/* =============== tela de mapa */
+
+.outros-dados-mapa div{
+    width: 100%;
+    /* height: 20%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.nebulosidade-mapa, .volume-mapa, .sensacao-mapa, .temp-mapa{
+    height: 10%;
+    border-bottom: 1px solid #39475c;
+}
+.temp-mapa h4{
+    color: white;
+}
+.temp-mapa h4 span{
+    color: rgb(161, 147, 147);
+}
+.outros-dados-mapa img{
+    width: 40%;
+}
+.outros-dados-mapa div div{
+    justify-content: center;
+    gap: 15%;
+    width: 20%;
+}
+
+/* ======================== responsividade */
+
+@media screen and (max-width: 878px){
+    .first-content{
+        display: none;
+    }
+    .second-content, .second-content-mapa{
+        width: 68%;
+    }
+    .searchBar-container input{
+        width: 80%;
+    }
+
+
+    .mobile-menu-icon{
+        display: block;
+        width: 5%;
+    }
+    .mobile-menu-icon img{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .dropdown-hide{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+    .mobile-menu, .mobile-menu-mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px;
+        width: 100%;
+    }
+    .sidebar-container{
+        align-items: flex-start;
+        text-indent: 6px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+    span{
+        margin-left: 0;
+    }
+    .mobile-menu div.mobile-menu-mapa div{
+        width: 90%;
+        height: 100%;
+    }
+   
+    /* ========= tela das cidades */
+    
+    h1{
+        margin-left: 2%;
+    }
+    .second-content-cidadesTela{
+        width: 100%;
+    }
+
+    /* =============== tela do mapa */
+
+    .main-mapa{
+        display: block;
+    }
+    .second-content-mapa{
+        width: 100%;
+    }
+    .third-content-mapa{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    svg{
+        width: 90%;
+    }
+    .mobile-menu-mapa{
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .main{
+        display: block;
+    }
+    .second-content{
+        width: 100%;
+    }
+    .third-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* ========= tela das cidades */
+    
+    h1{
+        font-size: 28px;
+    }
+    .principaisCidades{
+        align-items: center;
+    }
+    .city div img{
+        width: 15%;
+    } 
+
+    /* ========== tela de mapas */
+
+    svg{
+        margin-top: 10%;
+    }
+    
+}
+@media screen and (max-width: 540px){
+    .mobile-menu-icon{
+        width: 7%;
+    }
+
+
+    /* ========= tela das cidades */
+    h1{
+        font-size: 22px;
+    }
+    .city div img{
+        width: 20%;
+    } 
+}
+
+@media screen and (max-width: 440px){
+    .parte-horarios p{
+        font-size: 12px;
+    }
+    .parte-horarios h3{
+        font-size: 15px;
+    }
+    .col div img{
+        width: 18%;
+    }
+    .info-text p{
+        font-size: 12px;
+    }
+    .info-text h3{
+        font-size: 15px;
+    }
+
+    /* ========= tela das cidades */
+    
+    h1{
+        font-size: 18px;
+    }
+    .city div img{
+        width: 22%;
+    } 
+    .city div{
+        justify-content: center;
+    }
+}

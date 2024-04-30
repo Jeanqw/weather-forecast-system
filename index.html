@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="first-content">
+            <div class="sidebar">
+                <div class="sidebar-container-first">
+                    <img class="guarda-chuva_icon" src="img/guarda-chuva.svg">
+                </div>
+                <div class="sidebar-container"><!--space--></div>
+                <div class="sidebar-container" id="active">
+                    <img class="nuvem-sidebar_icon" src="img/nuvem-sidebar.svg">
+                    <span>Clima</span>
+                </div>
+                <a href="cidades.html">
+                    <div class="sidebar-container">
+                        <img class="cidades-sidebar_icon" src="img/cidades-sidebar.svg">
+                        <span>Cidades</span>
+                    </div>
+                </a>
+
+                <a href="mapa.html">
+                    <div class="sidebar-container">
+                        <img class="map_icon" src="img/map.svg">
+                        <span>Mapa</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="second-content">
+            <div class="searchBar-container">
+                <div class="mobile-menu-icon">
+                    <button><img src="img/menu-mobile.svg" alt=""></button>
+                </div>
+                <input type="text" name="" id="searchBar" placeholder="Pesquisar cidades">
+            </div>
+
+            <div class="clima-print">
+
+                <div class="dropdown-hide">
+                    <div class="mobile-menu">
+                        <div class="sidebar-container" id="active">
+                            <!-- <img class="nuvem-sidebar_icon" src="img/nuvem-sidebar.svg"> -->
+                            <span>Clima</span>
+                        </div>
+                        <a href="cidades.html">
+                            <div class="sidebar-container">
+                                <!-- <img class="cidades-sidebar_icon" src="img/cidades-sidebar.svg"> -->
+                                <span>Cidades</span>
+                            </div>
+                        </a>
+                        <a href="mapa.html">
+                            <div class="sidebar-container">
+                                <!-- <img class="map_icon" src="img/map.svg"> -->
+                                <span>Mapa</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column-clima">
+                    <div class="cidade">
+                        <h1 id="nameCity"></h1>
+                        <p id="weather"></p>
+                    </div>
+                    <div class="clima">
+                        <h1 id="temp"></h1>
+                    </div>
+                </div>
+
+                <div class="clima-icon">
+                    <img id="img-sun" src="" alt="">
+                </div>
+            </div>
+
+            <div class="clima-horarios-container">
+                <div class="clima-horarios">
+                    <p class="title-clima-horarios">Previsão para hoje</p>
+                    <div class="main-horarios">
+                        <div class="parte-horarios">
+                            <p>Mínima</p>
+                            <img src="img/arrow-down.svg" alt="">
+                            <h3 id="tempMin"></h3>
+                        </div>
+
+                        <div class="parte-horarios">
+                            <p>Máxima</p>
+                            <img src="img/arrow-up.svg" alt="">
+                            <h3 id="tempMax"></h3>
+                        </div>
+
+                        <div class="parte-horarios">
+                            <p>Volume em 1h</p>
+                            <img src="img/chuva-clima_horario.svg" alt="">
+                            <h3 id="vol-1h"></h3>
+                        </div>
+
+                        <div class="parte-horarios">
+                            <p>Nebulosidade</p>
+                            <img src="img/nuvem-clima_horario.svg" alt="">
+                            <h3 id="nebulosidade"></h3>
+                        </div>
+
+                        <!-- <div class="parte-horarios">
+                            <p>18:00</p>
+                            <img src="img/sol-clima_horario.svg" alt="">
+                            <h3>25°</h3>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="condicoes-ar-container">
+                <div class="condicoes-ar">
+                    <p>Condições do ar</p>
+                    <div class="info-ar">
+                        <div class="col">
+                            <div>
+                                <img src="img/termometro_info-ar.svg" alt="">
+                                <div class="info-text">
+                                    <p>Sensação térmica</p>
+                                    <h3 id="sensacao"></h3>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/pressao-ar.svg" alt="">
+                                <div class="info-text">
+                                    <p>Pressão do mar</p>
+                                    <h3 id="pressao"></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <img src="img/vento_info-ar.svg" alt="">
+                                <div class="info-text">
+                                    <p>Vento</p>
+                                    <h3 id="vento"></h3>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="img/umidade-ar.svg" alt="">
+                                <div class="info-text">
+                                    <p>Umidade do ar</p>
+                                    <h3 id="umidade"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-content">
+            <div class="outros-dados">
+                <p class="title-outros-dados">Outros dados</p>
+                <div class="container-info">
+                    <p class="row-info">País</p>
+                    <div>
+                        <img id="country_flag" src="">
+                        <p id="country_code"></p>
+                    </div>
+                </div>
+
+                <div class="container-info">
+                    <p class="row-info">Longitude</p>
+                    <div>
+                        <img src="img/latitude-longitude.svg" alt="">
+                        <p id="longitude"></p>
+                    </div>
+                </div>
+                <div class="container-info">
+                    <p class="row-info">Latitude</p>
+                    <div>
+                        <img src="img/latitude-longitude.svg" id="latitudeImg" alt="">
+                        <p id="latitude"></p>
+                    </div>
+                </div>
+
+                <div class="container-info-hide">
+                    <p class="row-info">Pressão do mar</p>
+                    <div>
+                        <img src="img/nivel-mar.svg" alt="">
+                        <p id="sea_level"></p>
+                    </div>
+                </div>
+                <div class="container-info-hide">
+                    <p class="row-info">Pressão do solo</p>
+                    <div>
+                        <img src="img/nivel-solo.svg" alt="">
+                        <p id="ground_level"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
