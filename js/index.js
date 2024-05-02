@@ -190,10 +190,7 @@ const showMapData = async (countryCodeMap, countryName) => {
 
     nameCountryDados.innerHTML = countryName;
 
-    let tempMinMapa = data.main.temp_min;
-    let tempMaxMapa = data.main.temp_max;
-    let tempMedia = (tempMinMapa + tempMaxMapa) / 2;
-    tempMedMapa.innerHTML = tempMedia + "° C";
+    tempMedMapa.innerHTML = data.main.temp + "° C";
 
     valor_nebulosidade.innerHTML = data.clouds.all + "%";
     valor_sensacao.innerHTML = data.main.feels_like + "°C";
