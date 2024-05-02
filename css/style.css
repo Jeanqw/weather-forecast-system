@@ -599,6 +599,10 @@ THIRD CONTAINER */
     h1{
         font-size: 18px;
     }
+    .principaisCidades{
+        align-items: stretch;
+        margin-left: 5.5%;
+    }
     .city div img{
         width: 22%;
     } 
