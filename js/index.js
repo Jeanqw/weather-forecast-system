@@ -33,8 +33,6 @@ const valor_volume = document.querySelector("#valor_volume");
 const valor_sensacao = document.querySelector("#valor_sensacao");
 
 
-
-
 // FUNCOES
 
 //funcao que pega os dados da API de clima
@@ -77,19 +75,20 @@ const showWeatherData = async (city) => {
     latitude.innerHTML = data.coord.lat;
 
     if (data.main["sea_level"] != undefined) {
-        for (let i = 0; i < container_info_hide.length; i++) {
-            container_info_hide[i].classList.remove("container-info-hide");
-            container_info_hide[i].classList.add("container-info");
+        container_info_hide.forEach((el) =>{
+            el.classList.remove("container-info-hide");
+            el.classList.add("container-info");
 
             sea_level.innerHTML = data.main.sea_level + " hPa";
             ground_level.innerHTML = data.main.grnd_level + " hPa";
-        }
+        })
+        
     } 
     else {
-        for (let i = 0; i < container_info_hide.length; i++) {
-            container_info_hide[i].classList.remove("container-info");
-            container_info_hide[i].classList.add("container-info-hide");
-        }
+        container_info_hide.forEach((el) =>{
+            el.classList.remove("container-info");
+            el.classList.add("container-info-hide");
+        })
     }
 }
 
@@ -204,7 +203,6 @@ const showMapData = async (countryCodeMap, countryName) => {
 }
 
 
-
 //==========================EVENTOS
 
 // ================= tela principal
@@ -272,5 +270,3 @@ paths.forEach((el) =>
 
     }));
 }
-
-
